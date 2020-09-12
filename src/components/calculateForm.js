@@ -3,7 +3,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 
 class CalculateForm extends Component {
-    state = {  }
+    state = {
+        age: '',
+        height: '',
+        height: '',
+        gender: '',
+    }
+    
+    calculateHandler = event => {
+        console.log(event);
+        event.preventDefault();
+    }
+
     render() { 
         return (
             <>
@@ -53,7 +64,9 @@ class CalculateForm extends Component {
                                             <Col lg={6}>
                                                 <div className="form-group">
                                                     <label htmlFor="age">Select Gender</label>
-                                                    <select className="form-control">
+                                                        <select
+                                                            name="gender"
+                                                            className="form-control">
                                                         <option value="male">Male</option>
                                                         <option value="female">Female</option>
                                                         <option value="other">Other</option>
@@ -61,8 +74,8 @@ class CalculateForm extends Component {
                                                 </div>
                                             </Col>
                                         </Row>
-                                        <button className="btn btn-info btn-sm mr-2">Calculate </button>
-                                        <button className="btn btn-danger btn-sm mr-2">Reset </button>
+                                        <button onClick={this.calculateHandler} className="btn btn-info btn-sm mr-2">Calculate </button>
+                                        <button type="reset" className="btn btn-danger btn-sm mr-2">Reset </button>
                                     </div>
                                 </div>
                                 </form>
