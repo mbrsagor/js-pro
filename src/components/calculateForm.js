@@ -10,19 +10,26 @@ class CalculateForm extends Component {
         gender: '',
     }
     
-    calculateHandler = event => {
-        console.log(state);
+     handleChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+    
+    submitHandler = event => {
+        console.log(this.state);
         event.preventDefault();
     }
 
-    render() { 
+    render() {
+        const {age, height, weight, gender} = this.state
         return (
             <>
                 <Container>
                     <Row>
                         <Col lg={8}>
                             <div className="calculatorForm p-3">
-                                <form>
+                                <form onSubmit={this.submitHandler}>
                                     <div className="card">
                                     <div className="card-body">
                                         <Row>
@@ -34,6 +41,8 @@ class CalculateForm extends Component {
                                                         className="form-control"
                                                         placeholder="Enter your age"
                                                         name="age"
+                                                        value={age}
+                                                        onChange={this.handleChange}
                                                     />
                                                 </div>
                                             </Col>
@@ -45,6 +54,8 @@ class CalculateForm extends Component {
                                                         className="form-control"
                                                         placeholder="Enter your height"
                                                         name="height"
+                                                        value={height}
+                                                        onChange={this.handleChange}
                                                     />
                                                 </div>
                                             </Col>
@@ -58,6 +69,8 @@ class CalculateForm extends Component {
                                                         className="form-control"
                                                         placeholder="Enter weight"
                                                         name="weight"
+                                                        value={weight}
+                                                        onChange={this.handleChange}
                                                     />
                                                 </div>
                                             </Col>
@@ -66,6 +79,8 @@ class CalculateForm extends Component {
                                                     <label htmlFor="age">Select Gender</label>
                                                         <select
                                                             name="gender"
+                                                            value={gender}
+                                                            onChange={this.handleChange}
                                                             className="form-control">
                                                         <option value="male">Male</option>
                                                         <option value="female">Female</option>
@@ -74,7 +89,7 @@ class CalculateForm extends Component {
                                                 </div>
                                             </Col>
                                         </Row>
-                                        <button onClick={this.calculateHandler} className="btn btn-info btn-sm mr-2">Calculate </button>
+                                        <button type="submit" className="btn btn-info btn-sm mr-2">Calculate </button>
                                         <button type="reset" className="btn btn-danger btn-sm mr-2">Reset </button>
                                     </div>
                                 </div>
