@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import CalculateForm from './calculateForm';
+import Header from './common/header';
 
 class Calculator extends Component {
     state = {}
     
     render() { 
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <h1>Implement bootstrap</h1>
-                    </div>
-                </div>
-            </div>
+            <>
+                <Header/>
+                < CalculateForm />
+            </>
         );
     }
 }
