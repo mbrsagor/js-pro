@@ -5,7 +5,13 @@ class Calculator extends Component {
     
     render() { 
         return (
-            < h1 > I 'm Calculator components</h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h1>Implement bootstrap</h1>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
