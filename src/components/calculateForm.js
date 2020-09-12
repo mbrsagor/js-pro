@@ -6,12 +6,12 @@ class CalculateForm extends Component {
     state = {
         age: '',
         height: '',
-        height: '',
+        weight: '',
         gender: '',
     }
     
     calculateHandler = event => {
-        console.log(event);
+        console.log(state);
         event.preventDefault();
     }
 
@@ -81,7 +81,31 @@ class CalculateForm extends Component {
                                 </form>
                             </div>
                         </Col>
-                        <Col lg={4}></Col>
+                        <Col lg={4}>
+                            <div className="sidebar p-3">
+                                <div className="card p-2">
+                                    <h5 className="card-title">Total Calories Result</h5>
+                                    <ul className="list-group">
+                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                            Maintenance
+                                            <span className="badge badge-primary badge-pill">1478</span>
+                                        </li>
+                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                            CALORIES / DAY
+                                            <span className="badge badge-primary badge-pill">1183</span>
+                                        </li>
+                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                            CALORIES / DAY
+                                            <span className="badge badge-primary badge-pill">887</span>
+                                        </li>
+                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio
+                                            <span className="badge badge-primary badge-pill">14</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </>
