@@ -9,8 +9,66 @@ class CalculateForm extends Component {
             <>
                 <Container>
                     <Row>
-                        <Col lg={3}></Col>
-                        <Col lg={9}></Col>
+                        <Col lg={8}>
+                            <div className="calculatorForm p-3">
+                                <form>
+                                    <div className="card">
+                                    <div className="card-body">
+                                        <Row>
+                                            <Col lg={6}>
+                                                <div className="form-group">
+                                                    <label htmlFor="age">Age your age</label>
+                                                    <input
+                                                        type="number"
+                                                        className="form-control"
+                                                        placeholder="Enter your age"
+                                                        name="age"
+                                                    />
+                                                </div>
+                                            </Col>
+                                            <Col lg={6}>
+                                                <div className="form-group">
+                                                    <label htmlFor="age">Enter Height</label>
+                                                    <input
+                                                        type="number"
+                                                        className="form-control"
+                                                        placeholder="Enter your height"
+                                                        name="height"
+                                                    />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col lg={6}>
+                                                <div className="form-group">
+                                                    <label htmlFor="age">Weight</label>
+                                                    <input
+                                                        type="number"
+                                                        className="form-control"
+                                                        placeholder="Enter weight"
+                                                        name="weight"
+                                                    />
+                                                </div>
+                                            </Col>
+                                            <Col lg={6}>
+                                                <div className="form-group">
+                                                    <label htmlFor="age">Select Gender</label>
+                                                    <select className="form-control">
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <button className="btn btn-info btn-sm mr-2">Calculate </button>
+                                        <button className="btn btn-danger btn-sm mr-2">Reset </button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </Col>
+                        <Col lg={4}></Col>
                     </Row>
                 </Container>
             </>
@@ -19,4 +77,3 @@ class CalculateForm extends Component {
 }
  
 export default CalculateForm;
-

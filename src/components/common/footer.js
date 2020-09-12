@@ -4,15 +4,15 @@ class Footer extends Component {
     render() { 
         return (
             <>
-                <Footer>
+                <footer>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-12">
+                            <div className="col-lg-12 text-center">
                                 <p>&copy; 2020 all right reserved.</p>
                             </div>
                         </div>
                     </div>
-                </Footer>
+                </footer>
             </>
         );
     }
