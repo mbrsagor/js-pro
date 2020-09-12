@@ -103,7 +103,7 @@ class CalculateForm extends Component {
                                     <ul className="list-group">
                                         <li className="list-group-item d-flex justify-content-between align-items-center">
                                             Maintenance
-                                            <span className="badge badge-primary badge-pill">1478</span>
+                                            <span className="badge badge-primary badge-pill">{this.state.age}</span>
                                         </li>
                                         <li className="list-group-item d-flex justify-content-between align-items-center">
                                             CALORIES / DAY
