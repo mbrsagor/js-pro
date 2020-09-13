@@ -7,7 +7,7 @@ class CalculateForm extends Component {
         age: '',
         height: '',
         weight: '',
-        general: '',
+        gender: '',
         goal_weight: '',
         activity_lavel: '',
     }
@@ -24,7 +24,7 @@ class CalculateForm extends Component {
     }
 
     render() {
-        const {age, height, weight, activity_lavel, goal_weight, general} = this.state
+        const {age, height, weight, activity_lavel, goal_weight, gender} = this.state
         return (
             <>
                 <Container>
@@ -109,15 +109,16 @@ class CalculateForm extends Component {
                                             </Col>
                                             <Col lg={6}>
                                                 <div className="form-group">
-                                                    <label htmlFor="general">General</label>
-                                                    <input
-                                                        type="text"
-                                                        className="form-control"
-                                                        placeholder="General"
-                                                        name="general"
-                                                        value={general}
-                                                        onChange={this.handleChange}
-                                                    />
+                                                    <label htmlFor="general">Gender</label>
+                                                    <select
+                                                            name="gender"
+                                                            value={gender}
+                                                            onChange={this.handleChange}
+                                                            className="form-control">
+                                                        <option value={1}>Male</option>
+                                                        <option value={2}>Female</option>
+                                                        <option value={3}>Other</option>
+                                                    </select>
                                                 </div>
                                             </Col>
                                         </Row>

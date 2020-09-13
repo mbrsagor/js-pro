@@ -1,5 +1,10 @@
 ## Calorie-calculator
 
-In the project directory, you can run:
+###### Developer documentations
+> Install all depandeancy and run project
 
-### `npm start`
+```
+cd Calorie-calculator
+npm install
+npm start
+```
