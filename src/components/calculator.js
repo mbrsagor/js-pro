@@ -10,7 +10,7 @@ class Calculator extends Component {
         return (
             <>
                 <Header/>
-                < CalculateForm />
+                <CalculateForm />
                 <Footer />
             </>
         );

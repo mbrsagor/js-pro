@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+// import Layout from './common/layout';
 import Output from './output';
 
 
