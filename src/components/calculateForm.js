@@ -7,6 +7,7 @@ class CalculateForm extends Component {
         age: '',
         height: '',
         weight: '',
+        general: '',
         goal_weight: '',
         activity_lavel: '',
     }
@@ -23,7 +24,7 @@ class CalculateForm extends Component {
     }
 
     render() {
-        const {age, height, weight, activity_lavel, goal_weight} = this.state
+        const {age, height, weight, activity_lavel, goal_weight, general} = this.state
         return (
             <>
                 <Container>
@@ -64,11 +65,11 @@ class CalculateForm extends Component {
                                         <Row>
                                             <Col lg={6}>
                                                 <div className="form-group">
-                                                    <label htmlFor="age">Weight</label>
+                                                    <label htmlFor="age">Current Weight</label>
                                                     <input
                                                         type="number"
                                                         className="form-control"
-                                                        placeholder="Enter weight"
+                                                        placeholder="Enter current weight"
                                                         name="weight"
                                                         value={weight}
                                                         onChange={this.handleChange}
@@ -102,6 +103,19 @@ class CalculateForm extends Component {
                                                         placeholder="Enter goal weight"
                                                         name="goal_weight"
                                                         value={goal_weight}
+                                                        onChange={this.handleChange}
+                                                    />
+                                                </div>
+                                            </Col>
+                                            <Col lg={6}>
+                                                <div className="form-group">
+                                                    <label htmlFor="general">General</label>
+                                                    <input
+                                                        type="text"
+                                                        className="form-control"
+                                                        placeholder="General"
+                                                        name="general"
+                                                        value={general}
                                                         onChange={this.handleChange}
                                                     />
                                                 </div>
