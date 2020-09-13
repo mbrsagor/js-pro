@@ -17,7 +17,6 @@ class Calculate extends Component {
         })
     }
 
-
     submitHandler = event => {
         console.log(this.state);
         event.preventDefault();
@@ -34,11 +33,11 @@ class Calculate extends Component {
                                 <Row>
                                     <Col lg={6}>
                                         <div className="form-group">
-                                            <label htmlFor="age">Age your age</label>
+                                            <label htmlFor="age">Age age</label>
                                             <input
                                                 type="number"
                                                 className="form-control"
-                                                placeholder="Enter your age"
+                                                placeholder="Enter age"
                                                 name="age"
                                                 value={age}
                                                 onChange={this.handleChange}
@@ -47,28 +46,29 @@ class Calculate extends Component {
                                     </Col>
                                     <Col lg={6}>
                                         <div className="form-group">
-                                            <label htmlFor="age">General Height</label>
-                                            <input
-                                                type="number"
-                                                className="form-control"
-                                                placeholder="Enter general height"
-                                                name="height"
-                                                value={height}
+                                            <label htmlFor="general">Gender</label>
+                                            <select
+                                                name="gender"
+                                                value={gender}
                                                 onChange={this.handleChange}
-                                            />
+                                                className="form-control">
+                                                <option value={1}>Male</option>
+                                                <option value={2}>Female</option>
+                                                <option value={3}>Other</option>
+                                            </select>
                                         </div>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col lg={6}>
                                         <div className="form-group">
-                                            <label htmlFor="age">Current Weight</label>
+                                            <label htmlFor="age"> Height</label>
                                             <input
                                                 type="number"
                                                 className="form-control"
-                                                placeholder="Enter current weight"
-                                                name="weight"
-                                                value={weight}
+                                                placeholder="Enter height"
+                                                name="height"
+                                                value={height}
                                                 onChange={this.handleChange}
                                             />
                                         </div>
@@ -93,6 +93,19 @@ class Calculate extends Component {
                                 <Row>
                                     <Col lg={6}>
                                         <div className="form-group">
+                                            <label htmlFor="age">Current Weight</label>
+                                            <input
+                                                type="number"
+                                                className="form-control"
+                                                placeholder="Enter current weight"
+                                                name="weight"
+                                                value={weight}
+                                                onChange={this.handleChange}
+                                            />
+                                        </div>
+                                    </Col>
+                                    <Col lg={6}>
+                                        <div className="form-group">
                                             <label htmlFor="goal_weight">Goal Weight</label>
                                             <input
                                                 type="number"
@@ -102,20 +115,6 @@ class Calculate extends Component {
                                                 value={goal_weight}
                                                 onChange={this.handleChange}
                                             />
-                                        </div>
-                                    </Col>
-                                    <Col lg={6}>
-                                        <div className="form-group">
-                                            <label htmlFor="general">Gender</label>
-                                            <select
-                                                name="gender"
-                                                value={gender}
-                                                onChange={this.handleChange}
-                                                className="form-control">
-                                                <option value={1}>Male</option>
-                                                <option value={2}>Female</option>
-                                                <option value={3}>Other</option>
-                                            </select>
                                         </div>
                                     </Col>
                                 </Row>
