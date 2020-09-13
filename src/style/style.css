@@ -6,6 +6,14 @@ body {
     color: #666666;
 }
 
+.navbar-light .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
 /* Header */
 header {
     background: #0088CC;
