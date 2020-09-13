@@ -7,7 +7,8 @@ class CalculateForm extends Component {
         age: '',
         height: '',
         weight: '',
-        gender: '',
+        goal_weight: '',
+        activity_lavel: '',
     }
     
      handleChange = event => {
@@ -22,7 +23,7 @@ class CalculateForm extends Component {
     }
 
     render() {
-        const {age, height, weight, gender} = this.state
+        const {age, height, weight, activity_lavel, goal_weight} = this.state
         return (
             <>
                 <Container>
@@ -76,16 +77,33 @@ class CalculateForm extends Component {
                                             </Col>
                                             <Col lg={6}>
                                                 <div className="form-group">
-                                                    <label htmlFor="age">Select Gender</label>
+                                                    <label htmlFor="age">Activity Level</label>
                                                         <select
-                                                            name="gender"
-                                                            value={gender}
+                                                            name="activity_lavel"
+                                                            value={activity_lavel}
                                                             onChange={this.handleChange}
                                                             className="form-control">
-                                                        <option value="male">Male</option>
-                                                        <option value="female">Female</option>
-                                                        <option value="other">Other</option>
+                                                        <option value={1}>No Execurse</option>
+                                                        <option value={2}>2 trmes vcch</option>
+                                                        <option value={3}>3-4 trmes</option>
+                                                        <option value={4}>5 trmes</option>
+                                                        <option value={5}>Arntect</option>
                                                     </select>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col lg={6}>
+                                                <div className="form-group">
+                                                    <label htmlFor="goal_weight">Goal Weight</label>
+                                                    <input
+                                                        type="number"
+                                                        className="form-control"
+                                                        placeholder="Enter goal weight"
+                                                        name="goal_weight"
+                                                        value={goal_weight}
+                                                        onChange={this.handleChange}
+                                                    />
                                                 </div>
                                             </Col>
                                         </Row>
@@ -99,11 +117,11 @@ class CalculateForm extends Component {
                         <Col lg={4}>
                             <div className="sidebar p-3">
                                 <div className="card p-2">
-                                    <h5 className="card-title">Total Calories Result</h5>
+                                    <h5 className="card-title">Output</h5>
                                     <ul className="list-group">
                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                            Maintenance
-                                            <span className="badge badge-primary badge-pill">{this.state.age}</span>
+                                            BMR
+                                            <span className="badge badge-primary badge-pill">3434</span>
                                         </li>
                                         <li className="list-group-item d-flex justify-content-between align-items-center">
                                             CALORIES / DAY
