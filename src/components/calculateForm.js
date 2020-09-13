@@ -48,11 +48,11 @@ class CalculateForm extends Component {
                                             </Col>
                                             <Col lg={6}>
                                                 <div className="form-group">
-                                                    <label htmlFor="age">Enter Height</label>
+                                                    <label htmlFor="age">General Height</label>
                                                     <input
                                                         type="number"
                                                         className="form-control"
-                                                        placeholder="Enter your height"
+                                                        placeholder="Enter general height"
                                                         name="height"
                                                         value={height}
                                                         onChange={this.handleChange}
