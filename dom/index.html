@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dom Change Example</title>
+</head>
+<body>
+    
+    <p id="show_something"></p>
+    <p id="about_me"></p>
+
+    <p id="default_color">Some text here</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+
+    <script type="text/javascript">
+        document.getElementById("show_something").innerHTML = "Hello Sagor! What happened?";
+        document.getElementById("about_me").innerHTML = "Hello there, I'm Sagor from Dhaka-Bangaldesh";
+        // document.write(Date());
+
+        // Change color
+        function changeColor(newColor) {
+            var element = document.getElementById('default_color');
+            element.style.color = newColor;
+        }
+
+
+    </script>
+
+</body>
+</html>
