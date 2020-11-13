@@ -46,3 +46,13 @@ console.log(val);
 
 val = list_item.parentElement.parentElement;
 console.log(val);
+
+
+// Create element 
+const li = document.createElement('li');
+li.className = 'list-item';
+li.id = "itemList";
+li.setAttribute('title', 'Hello developer');
+li.textContent = 'Hello full-stack developer';
+
+console.log(li);
