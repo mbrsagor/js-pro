@@ -81,6 +81,20 @@
             item.style.listStyleType = 'none';
         });
 
+        // Traversing the DOM
+        let val;
+        const list_item = document.querySelector('ul.list-group');
+        val = list_item.children[0];
+        val.style.color = 'red';
+
+        console.log(val);
+
+        val = list_item.parentElement;
+        console.log(val);
+
+        val = list_item.parentElement.parentElement;
+        console.log(val);
+
     </script>
 
 </body>
