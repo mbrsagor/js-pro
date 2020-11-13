@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Dom Change Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     
@@ -12,7 +14,21 @@
 
     <p id="root">Some text here</p>
 
-    <div class="container"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-group">
+                    <li class="list-item">Python</li>
+                    <li class="list-item">JavaScript</li>
+                    <li class="list-item">Django</li>
+                    <li class="list-item">Flask</li>
+                    <li class="list-item">React.JS</li>
+                    <li class="list-item">Ember.JS</li>
+                    <li class="list-item">Dev ops</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
     <script type="text/javascript">
@@ -31,6 +47,25 @@
 
         const name_class = document.getElementsByClassName('container');
         console.log(name_class);
+
+        // Get query selector is a one of best selector
+        const query_selector = document.querySelector('.container');
+        console.log(query_selector);
+
+        // List styleing
+        const list = document.querySelector('li');
+        list.style.listStyleType = "none"; // Here query selector only point one simple element.
+        
+        // Get elment by tag
+        const tag = document.getElementsByTagName('li');
+        document.getElementsByTagName('li')[1].style.listStyleType = "none";
+        console.log(tag);
+
+        // Query selector all
+        let items = document.querySelectorAll('li');
+        items.forEach(function(item){
+            item.style.listStyleType = 'none';
+        });
 
     </script>
 
