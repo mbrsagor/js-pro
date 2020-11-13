@@ -52,7 +52,8 @@ console.log(val);
 const li = document.createElement('li');
 li.className = 'list-item';
 li.id = "itemList";
-li.setAttribute('title', 'Hello developer');
+// li.setAttribute('title', 'Hello developer');
 li.textContent = 'Hello full-stack developer';
-
 console.log(li);
+
+document.querySelector('ul').appendChild(li);
