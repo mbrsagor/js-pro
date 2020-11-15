@@ -45,5 +45,5 @@ class Person extends Employee {
 }
 
 // Create instance/object
-let p1 = new Person('Dhaka-Bangladesh', '+8801773474709', 'Software engineer');
+let p1 = new Person('mbr', 'sagor', 'google', 45000,'Dhaka-Bangladesh', '+8801773474709', 'Software engineer');
 console.log(p1.aboutPerson());
