@@ -68,5 +68,6 @@ let what_do_title = document.getElementById("what_do_title");
 what_do_title.innerHTML = "What we do ?";
 what_do_title.style.marginTop = "20px";
 let left_text = document.createElement('p');
-left_text.textContent = "hello world";
-// Right side content
+left_text.id = "context";;
+left_text.textContent = "hello developer...";
+console.log(left_text);
