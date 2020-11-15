@@ -1,3 +1,4 @@
+"use strict";
 class Employee {
 
     /**
@@ -23,8 +24,8 @@ class Employee {
 }
 
 // Create instance `Employee class`
-sagor = new Employee('mbr', 'sagor', 'google', 45000);
-sagor = new Employee('istaik', 'ohi', 'fiverr', 55000);
+const sagor = new Employee('mbr', 'sagor', 'google', 45000);
+const ohi = new Employee('istaik', 'ohi', 'fiverr', 55000);
 
 sagor.aboutEmployee();
 
@@ -43,7 +44,6 @@ class Person extends Employee {
     }
 }
 
-p1 = new Person('Dhaka-Bangladesh', '+8801773474709', 'Software engineer');
+// Create instance/object
+let p1 = new Person('Dhaka-Bangladesh', '+8801773474709', 'Software engineer');
 console.log(p1.aboutPerson());
-
-console.log(self.fiszt)

@@ -1,3 +1,4 @@
+"use strict";
 function Person(name) {
     this.name = name;
 
@@ -7,5 +8,5 @@ function Person(name) {
 }
 
 // Create an object in person class
-sagor = new Person('mbr-sagor');
+const sagor = new Person('mbr-sagor');
 sagor.show_name();
