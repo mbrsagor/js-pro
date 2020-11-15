@@ -1,3 +1,5 @@
+"use strict";
+
 // Object
 let info = {
     
@@ -48,3 +50,10 @@ var pilots = [
 
 const result = pilots.filter(pilot => pilot.action === 'Empire');
 console.log(result);
+
+
+// Iterate `Array` for loop `ES6` mode
+const items = ['Python', 'Javascript', 'Java', 'Swift', 'Dart']
+for (const item of items) {
+    console.log(`I know: ${item}`);
+}
