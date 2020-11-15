@@ -72,6 +72,12 @@ left_text.id = "context";;
 left_text.textContent = "hello developer...";
 console.log(left_text);
 
+let context = document.getElementById('context');
+context.style.marginTop = "20px";
+context.style.textAlign = "justify";
+context.innerText = `Distinctively impact next-generation technology whereas value-added outsourcing. Enthusiastically maintain cutting-edge. outsourcing whereas low-risk high-yield alignments. Progressively facilitate best-of-breed value before integrated. intellectual capital. Progressively predominate front-end collaboration and idea-sharing and cross functional imperatives. Globally fabricate strategic interfaces through out-of-the-box leadership skills.Quickly recaptiualize stand-alone solutions and resource sucking applications. Collaboratively matrix just in time
+                process improvements via compelling core competencies. Holisticly enhance principle-centered platforms through holistic growth strategies. Professionally seize adaptive potentialities and enterprise-wide human capital. Competently repurpose empowered experiences before high-payoff solutions. Energistically network optimal collaboration and.`;
+
 // Footer
 let footer = document.getElementById('footer');
 footer.style.background = "#f00";
