@@ -71,3 +71,12 @@ let left_text = document.createElement('p');
 left_text.id = "context";;
 left_text.textContent = "hello developer...";
 console.log(left_text);
+
+// Footer
+let footer = document.getElementById('footer');
+footer.style.background = "#f00";
+footer.style.padding = "10px";
+footer.style.color = "#ffffff";
+let copy_wride = document.getElementById("copy_wride");
+copy_wride.innerText = `All right reserved develop by Bozlur Rosid Sagor`;
+copy_wride.style.textAlign = "center";
