@@ -37,3 +37,14 @@ let new_list = [...list, 'Sagor', 'ohi', 'meg']
 let _new_item = []
 const item_list = list.map(_item => _new_item.push(_item));
 console.log(item_list);
+
+
+var pilots = [
+  {id: 2, name: "Wedge Antilles",faction: "Rebels"},
+  {id: 8, name: "Ciena Ree", faction: "Empire"},
+  {id: 40,name: "Iden Versio", action: "Empire"},
+  {id: 66,name: "Thane Kyrell",faction: "Rebels"}
+];
+
+const result = pilots.filter(pilot => pilot.action === 'Empire');
+console.log(result);
