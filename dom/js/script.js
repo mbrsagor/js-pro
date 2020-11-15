@@ -46,3 +46,27 @@ menu_link.forEach((link) => {
     link.style.textDecoration = "none";
     link.style.color = "#666666";
 });
+
+// Banner
+let banner = document.getElementById('banner');
+// console.log(banner);
+banner.style.background = "#339966";
+banner.style.padding = "20px";
+banner.style.color = "#ffffff";
+
+// Main content
+let content = document.getElementById("content");
+content.style.width = "800px";
+content.style.margin = "0 auto";
+content.style.overflow = "hidden";
+
+let about_title = document.getElementById("about_title");
+about_title.innerHTML = "About ME";
+
+// Left side content
+let what_do_title = document.getElementById("what_do_title");
+what_do_title.innerHTML = "What we do ?";
+what_do_title.style.marginTop = "20px";
+let left_text = document.createElement('p');
+left_text.textContent = "hello world";
+// Right side content
