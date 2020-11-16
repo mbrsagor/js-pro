@@ -87,10 +87,17 @@ right_side.style.float = "right";
 let service_tilte = document.getElementById("service_tilte");
 service_tilte.innerHTML = "Our Services";
 
+var para = document.createElement('p');
+var _content = document.createTextNode('Our service 24/7 open \n');
+var _content2 = document.createTextNode('Another new services');
+para.appendChild(_content);
+para.appendChild(_content2);
+var new_element = document.getElementById("new_content");
+new_element.appendChild(para);
+
 let add_text_btn = document.getElementById("add_text_btn");
 add_text_btn.innerHTML = "Click me";
 add_text_btn.style.marginTop = "20px";
-
 // button click event
 add_text_btn.addEventListener('click', clickFunc);
 function clickFunc() {
