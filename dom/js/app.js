@@ -54,6 +54,6 @@ li.className = 'list-item';
 li.id = "itemList";
 // li.setAttribute('title', 'Hello developer');
 li.textContent = 'Hello full-stack developer';
-console.log(li);
+// console.log(li);
 
 document.querySelector('ul').appendChild(li);

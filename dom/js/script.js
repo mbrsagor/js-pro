@@ -67,16 +67,26 @@ about_title.innerHTML = "About ME";
 let what_do_title = document.getElementById("what_do_title");
 what_do_title.innerHTML = "What we do ?";
 what_do_title.style.marginTop = "20px";
-let left_text = document.createElement('p');
-left_text.id = "context";;
-left_text.textContent = "hello developer...";
-console.log(left_text);
+
+// console.log(left_text);
 
 let context = document.getElementById('context');
 context.style.marginTop = "20px";
 context.style.textAlign = "justify";
 context.innerText = `Distinctively impact next-generation technology whereas value-added outsourcing. Enthusiastically maintain cutting-edge. outsourcing whereas low-risk high-yield alignments. Progressively facilitate best-of-breed value before integrated. intellectual capital. Progressively predominate front-end collaboration and idea-sharing and cross functional imperatives. Globally fabricate strategic interfaces through out-of-the-box leadership skills.Quickly recaptiualize stand-alone solutions and resource sucking applications. Collaboratively matrix just in time
                 process improvements via compelling core competencies. Holisticly enhance principle-centered platforms through holistic growth strategies. Professionally seize adaptive potentialities and enterprise-wide human capital. Competently repurpose empowered experiences before high-payoff solutions. Energistically network optimal collaboration and.`;
+
+let left_side = document.getElementById("left_side");
+left_side.style.width = "75%";
+left_side.style.float = "left"
+
+// Right side
+let right_side = document.getElementById("right_side");
+right_side.style.width = "20%";
+right_side.style.float = "right";
+let service_tilte = document.getElementById("service_tilte");
+service_tilte.innerHTML = "Our Services";
+
 
 // Footer
 let footer = document.getElementById('footer');
