@@ -195,3 +195,10 @@ function reverse_string(revarseMe) {
   return revared;
 }
 console.log(reverse_string('sagor'));
+
+sayHi("Julia");
+
+function sayHi(name) {
+  console.log(greeting + " " + name);
+  var greeting = "Hello";
+}
