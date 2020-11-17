@@ -186,6 +186,12 @@ console.log(n);
 //   }
 // }
 
-for (var i = 0; i <= 6; i = i + 2){
-  console.log(i);
+
+function reverse_string(revarseMe) {
+  var revared = "";
+  for (var i = revarseMe.length - 1; i >= 0; i--){
+    revared += revarseMe[i];
+  }
+  return revared;
 }
+console.log(reverse_string('sagor'));
