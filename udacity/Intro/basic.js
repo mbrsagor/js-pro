@@ -6,6 +6,10 @@ for (var i = 0; i < my_string.length; i++){
   console.log(my_string.charCodeAt(i));
 }
 
+let x = { name: "Richard" };
+let y = { name: "Richard" };
+console.log(x === y);
+
 
 var adjective1 = "amazing";
 var adjective2 = "fun";

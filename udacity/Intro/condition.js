@@ -50,3 +50,17 @@ if ("") {
 } else {
   console.log("the value is falsy");
 }
+
+/**
+ var a = {
+  myFunction: function quiz() {
+    console.log("hi");
+  },
+};
+var b = {
+  myFunction: function quiz() {
+    console.log("hi");
+  },
+};
+a.myFunction === b.myFunction;
+ */

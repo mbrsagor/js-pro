@@ -202,3 +202,7 @@ function sayHi(name) {
   console.log(greeting + " " + name);
   var greeting = "Hello";
 }
+
+let x = { name: "Richard" };
+let y = { name: "Richard" };
+console.log(x === y);
