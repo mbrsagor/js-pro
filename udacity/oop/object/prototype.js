@@ -11,8 +11,14 @@ Dog.prototype.brek = function () {
 const dog = new Dog(5, 5.5, 'Suntan');
 dog.brek();
 
+Dog.prototype.eat = function () {
+    console.log(`${this.name} is like to milk`);
+}
 
+const tiger = new Dog(6, 7.0, 'Tiger');
+tiger.eat();
 // Prototypal Inheritance: Subclasses
+/**
 function Animal(name) {
     this.name = name;
 }
@@ -29,3 +35,5 @@ function Cat(name) {
 Cat.prototype = Object.create(Animal.prototype);
 Cat.prototype.constructor = Cat;
 
+
+ */
