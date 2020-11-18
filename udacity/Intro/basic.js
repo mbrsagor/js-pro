@@ -21,3 +21,13 @@ console.log(madLib);
 var num = 5.567899776;
 var n = num.toFixed(3);
 console.log(n);
+
+// setTimeout(() => {
+//   console.log("Time start from now...");
+// }, 2000);
+
+for (let i = 1; i <= 10; i++){
+  setTimeout(() => {
+    console.log(`Download ${i}% done.`);
+  }, 2000);
+}
