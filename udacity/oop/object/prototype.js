@@ -37,3 +37,18 @@ Cat.prototype.constructor = Cat;
 
 
  */
+
+// Mixins / Extending Object Functionality with Mixins
+const duck = {
+  hasBill: true,
+};
+const beaver = {
+  hasTail: true,
+};
+const otter = {
+  hasFur: true,
+  feet: "webbed",
+};
+
+const platypus = Object.assign(duck, beaver, otter);
+console.log(platypus);
