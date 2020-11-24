@@ -22,3 +22,14 @@ try {
 } finally {
   console.log(`Thank you for singin our website.`);
 }
+
+
+// Inner function
+(function saySomething() {
+    console.log(`Hello there, How about you?`);
+})();
+
+// with argument
+(function SayHello(name) {
+    console.log(`Hello, ${name}`);
+})('Sagor');
