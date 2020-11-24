@@ -187,7 +187,8 @@ console.log(n);
 // }
 
 
-function reverse_string(revarseMe) {
+/**
+ function reverse_string(revarseMe) {
   var revared = "";
   for (var i = revarseMe.length - 1; i >= 0; i--){
     revared += revarseMe[i];
@@ -206,3 +207,6 @@ function sayHi(name) {
 let x = { name: "Richard" };
 let y = { name: "Richard" };
 console.log(x === y);
+ */
+
+ 
