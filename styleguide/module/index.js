@@ -16,6 +16,16 @@ function sahHello(name) {
   return `Hello, ${name}`;
 }
 
+/*
+(function calculateSomething() {
+  let num = 50;
+  if (num > 70) {
+    console.log('Hello World');
+  } else {
+    throw new Error("Something went to worng");
+  }
+})()
+ */
 
 module.exports = {
   person: Person,
