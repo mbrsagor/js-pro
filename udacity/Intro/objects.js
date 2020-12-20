@@ -8,3 +8,7 @@ let information = {
 };
 
 information.name = "Md.Bozlur Rosid Sagor" // Update value
+
+for(let obj of Object.entries(information)){
+    console.log(obj);
+}

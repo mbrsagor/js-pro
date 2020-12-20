@@ -11,3 +11,9 @@ if (is_active) {
 } else {
     console.log('He is is Inactive');
 }
+
+if(false){
+  console.log(answer)
+}else{
+  console.log(`Not found...`);
+}
