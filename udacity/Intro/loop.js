@@ -22,3 +22,13 @@ while (x >= 0) {
 for (var i = 0; i <= 6; i = i + 2) {
   console.log(i);
 }
+
+console.log('\n');
+
+var a = 0;
+do {
+  a++;
+  if(a <= 5){
+    console.log(`I'm speaking: ${a}`);
+  }
+}while (a < 10);
