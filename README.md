@@ -28,6 +28,7 @@
  - Odd and Event numbers
  - Few problems solved
 
+###### JavaScript `yield` use
 
 ```javascript
 function* foo(index) {
