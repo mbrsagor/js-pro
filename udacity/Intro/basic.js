@@ -31,3 +31,7 @@ for (let i = 1; i <= 10; i++){
     console.log(`Download ${i}% done.`);
   }, 2000);
 }
+
+var numbers = [4, 9, 16, 25];
+var xyz = numbers.map(Math.sqrt)
+console.log(xyz)
